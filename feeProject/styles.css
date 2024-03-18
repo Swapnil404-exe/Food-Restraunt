@@ -1,0 +1,707 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.main-background {
+    position: relative;
+    background-image: url("Images/main-bg.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    z-index: 0;
+
+}
+
+.nav-header {
+    position: relative;
+    background-color: white;
+    height: 25px;
+    z-index: 2;
+
+}
+
+.nav-below {
+    position: relative;
+    height: 80px;
+    background-color: black;
+    opacity: 0.7;
+    z-index: 2;
+
+}
+
+.triangle {
+    position: absolute;
+    top: 0;
+    left: 10%;
+    width: 0;
+    height: 0;
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+    border-top: 175px solid #e7a331;
+    z-index: 1;
+}
+
+.logo {
+    display: flex;
+    position: absolute;
+    top: -190px;
+    left: -70px;
+    width: 140px;
+    height: 140px;
+
+}
+
+.order {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    margin-left: 500px;
+}
+
+.order img {
+    width: 15px;
+    height: 15px;
+}
+
+.order p {
+    margin: 0;
+    padding-top: 2px;
+    padding-left: 5px;
+    font-family: "Open Sans";
+    font-size: 10px;
+    font-weight: bolder;
+    color: black;
+}
+
+.phone {
+    display: flex;
+    flex-direction: row;
+    margin-left: 675px;
+    margin-top: -14px;
+}
+
+.phone img {
+    width: 15px;
+    height: 15px;
+}
+
+.phone p {
+    margin: 0;
+    padding-top: 2px;
+    padding-left: 5px;
+    font-family: "Open Sans";
+    font-size: 10px;
+
+    color: black;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    margin-right: 100px;
+    margin-top: -15px;
+}
+
+.social-icons {
+    width: 9px;
+    padding-right: 10px;
+
+}
+
+.nav-below {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+
+}
+
+ul {
+    display: flex;
+
+}
+
+.nav {
+    list-style-type: none;
+    padding-right: 30px;
+    padding-top: 10px;
+}
+
+.nav a {
+    color: #ffffff;
+    font-family: "Myriad Pro";
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.table {
+    background-color: transparent;
+    color: #e7a331;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    font-family: "Myriad Pro";
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 5px;
+    margin-right: 100px;
+}
+
+
+.headline {
+    display: flex;
+    flex-direction: column;
+}
+
+.headline h1 {
+    font-size: 95px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Pacifico";
+    text-align: center;
+    filter: drop-shadow(-1.5px 2.598px 3.5px #000000);
+    padding: 0;
+    margin: 0;
+    padding-top: 50px;
+    align-self: center;
+}
+
+.headline p {
+    font-size: 15px;
+    color: #ffffff;
+    font-family: "Times New Roman";
+    text-align: center;
+    width: 700px;
+    align-self: center;
+}
+
+.headline button {
+    padding: 0;
+    width: 100px;
+    background-color: transparent;
+    border: 1px white solid;
+    border-radius: 4px;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 20px;
+    align-self: center;
+}
+
+
+.about-bg {
+    height: 100vh;
+    position: relative;
+    background-image: url("Images/about-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    z-index: 0;
+}
+
+.about-img-container {
+    position: relative;
+    width: 350px;
+    height: 250px;
+    margin-left: 200px;
+    margin-top: 150px;
+}
+
+.img-above {
+    position: absolute;
+    width: 350px;
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('Images/about-image.svg');
+    border: 10px solid white;
+    transform: rotate(-15deg);
+    box-shadow: whitesmoke;
+    left: -20px;
+}
+
+.img-below {
+    position: absolute;
+    width: 350px;
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('Images/about-image.svg');
+    border: 10px solid white;
+    box-shadow: whitesmoke;
+
+}
+
+.about-info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    margin-top: 100px;
+    text-align: left;
+    content: justify;
+}
+
+.about-main-h1 {
+    font-size: 30px;
+    color: #000000;
+    font-weight: bolder;
+    font-family: "Pacifico";
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+
+.about-below-h1 {
+    font-size: 38px;
+    color: #000000;
+    font-family: "Times New Roman";
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+
+.about-p {
+    width: 550px;
+    font-size: 15px;
+    color: #4a4a4a;
+    font-family: "Times New Roman";
+}
+
+.about-btn {
+    width: 150px;
+    background-color: #e7a331;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 20px;
+    align-self: left;
+}
+
+.chilli img {
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    width: 250px;
+}
+
+.recipes-bg {
+    height: 100vh;
+    position: relative;
+    background-image: url("Images/recipies-bg.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    z-index: 0;
+    background-color: #000000;
+}
+
+.recipes-info {
+    background-image: url("Images/about-bg.png");
+    width: 500px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+    top: 80px;
+    left: 100px;
+}
+.recipes-btn {
+    width: 150px;
+    background-color: #e7a331;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 20px;
+    margin-left: 30px;
+    align-self: left;
+}
+
+.recipe-img img {
+    width: 650px;
+    margin-top: 65px;
+
+}
+
+.recipe-img {
+    margin-left: 470px;
+    position: relative;
+
+}
+
+.delicious-main-h1 {
+
+    font-size: 25px;
+    color: #000000;
+    font-weight: bold;
+    font-family: "Pacifico";
+    text-align: left;
+    padding-left: 30px;
+    padding-top: 30px;
+    margin: 0;
+}
+
+.delicious-below-h1 {
+    font-size: 30px;
+    color: #000000;
+    font-family: "Times New Roman";
+    text-align: left;
+    padding-left: 30px;
+    margin: 0;
+}
+
+.deliciouss-p {
+    width: 400px;
+    font-size: 15px;
+    color: #4a4a4a;
+    font-family: "Times New Roman";
+    padding-left: 30px;
+}
+
+
+
+
+
+
+
+.experience-bg {
+    background-image: url("Images/about-bg.png");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.experience-bg h1 {
+    font-size: 35px;
+    color: #000000;
+    font-weight: bolder;
+    font-family: "Pacifico";
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    margin-top: 20px;
+}
+
+.experience-bg span {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.menu-1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu-1 img {
+    height: 220px;
+    width: 250px;
+}
+
+.menu-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu-2 img {
+    height: 220px;
+    width: 250px;
+}
+
+.side-img-2 img {
+    width: 130px;
+    margin-left: 1380px;
+    margin-top: 25px;
+}
+
+
+.delicious {
+    background-image: url("./Images/brown-table.png");
+
+    /* background-blend-mode: ; */
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 60px 0;
+    /* justify-content: center; */
+    /* align-items: center; */
+
+
+
+}
+
+.delicious h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Pacifico";
+    text-align: center;
+
+}
+
+.delicious span {
+    font-size: 38px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: "Times New Roman";
+}
+
+.delicious-1 {
+    display: flex;
+    flex-direction: flex-row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+
+.delicious-2 {
+    display: flex;
+    flex-direction: flex-row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+
+}
+
+.delicious-3 {
+    display: flex;
+    flex-direction: flex-row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+
+}
+
+
+.delicious-1 div:nth-child(1) img {
+    position: relative;
+    right: 150px;
+}
+
+.delicious-2 div:nth-child(1) img {
+    position: relative;
+    right: -150px;
+}
+
+.delicious-3 div:nth-child(1) img {
+    position: relative;
+    right: 150px;
+}
+
+.deliciousMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    background-color: white;
+    position: absolute;
+    right: 200px;
+
+}
+
+.deliciousMenu2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    background-color: white;
+    position: absolute;
+    right: 730px;
+
+}
+
+.deliciousMenu p {
+    width: 100%;
+    padding-left: 85px;
+    font-size: 30px;
+    /* color: #ffffff; */
+    font-weight: 400;
+    font-family: "Pacifico";
+
+
+    /* text-align: center; */
+}
+
+.deliciousMenuDishes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.deliciousMenuDishes li {
+    padding: 10px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-right: 50px;
+    font-size: 18px;
+    color: #000000;
+    font-family: "Times New Roman";
+
+
+}
+
+.deliciousMenuDishes li span {
+    color: #000000;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.Apps {
+    background-image: url("./Images/Layer\ 92.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+}
+
+.Appsblur {
+    background-color: black;
+    position: absolute;
+    filter: opacity(0.4);
+    width: 100%;
+    height: 100%;
+
+}
+
+.Appscontent {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    gap: 150px;
+    padding: 100px 0;
+
+}
+
+.AppsAnnouncement {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    /* width: 100%; */
+    height: 100%;
+    gap: 10px;
+}
+
+.AppsAnnouncement div:nth-child(1) {
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Pacifico";
+}
+
+.AppsAnnouncement div:nth-child(2) {
+    font-size: 95px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: "Times New Roman";
+}
+
+.AppsAnnouncement div:nth-child(3) {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: "Times New Roman";
+}
+
+.AppsStore {
+    display: flex;
+    gap: 20px;
+
+}
+
+.delicioussideimg {
+    position: absolute;
+    left: -23vh;
+}
+.footer{
+    background-image: url("./Images/Footer.png");
+    
+    width: 1519px;
+    height: 475px;
+    display: flex;
+}
+.footer .location{
+    color: white;
+}
+.side-1{
+    text-align: left;
+    margin-left: -7vh;
+    margin-top: 7vh;
+}
+.side-2{
+    text-align: right;
+    margin-right: -20vh;
+    margin-top: 12vh;
+}
+.feedback p{
+    font-family: "Pacifico"; 
+    color: white;
+    font-weight: 200;
+}
+.head{
+    font-family: "Pacifico"; 
+    color: white;
+    text-align: center;
+    font-weight: 200;
+    margin-top: 20vh;
+}
+.detail{
+    width: 295px;
+    height: 210px;
+    font-size: 15px;
+    color: #ffffff;
+    font-family: "Times New Roman";
+    text-align: center;
+}
+.timings h1{
+    color: white;
+    font-family: "Pacifico"; 
+
+}
